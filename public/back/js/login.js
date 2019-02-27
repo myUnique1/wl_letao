@@ -75,4 +75,9 @@ $(function(){
             }
         })
     })
+
+    // 3. 重置表单
+    $('[type="reset"]').on('click',function(){
+        $('form').data("bootstrapValidator").resetForm(true);
+    })
 })
